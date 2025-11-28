@@ -1,4 +1,4 @@
-# playbook.yaml
+# playbook.yml
 version: v1
 services:
   - name: gemini-greeter
