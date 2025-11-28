@@ -1,0 +1,11 @@
+# playbook.yaml
+version: v1
+services:
+  - name: gemini-greeter
+    image: build
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - port: 8000  # Or whatever port your app.py uses (Flask default is 5000)
+        protocol: TCP
